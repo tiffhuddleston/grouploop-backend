@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'grouploop',
     'rest_framework',
+    'django_extensions',
 ]
 
 REST_FRAMEWORK = {
