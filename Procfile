@@ -1,1 +1,2 @@
-web: gunicorn grouploop_backend.wsgi —-log-file -
+web: gunicorn grouploop_django
+.wsgi —-log-file -
