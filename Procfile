@@ -1,0 +1,1 @@
+web: gunicorn grouploop_backend.wsgi —-log-file -
