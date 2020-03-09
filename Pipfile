@@ -19,6 +19,7 @@ django-cors-headers = "*"
 whitenoise = "*"
 dj-database-url = "*"
 django-heroku = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.8"
