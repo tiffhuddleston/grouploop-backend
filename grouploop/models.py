@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Member(models.Model):
+class User(AbstractUser):
     name = models.TextField()
     github = models.TextField()
     facebook = models.TextField()
@@ -19,9 +19,9 @@ class Member(models.Model):
 
 
 class Circle(models.Model):
-    title = models.CharField(max_length=100)
+    title = twitter = models.TextField()
     description = models.TextField()
-    member = models.ManyToManyField(Member)
+    member = models.ManyToManyField(User)
 
     class Meta:
         ordering = ['title']
