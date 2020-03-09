@@ -11,7 +11,7 @@ class CircleSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Circle
-        fields = ('id', 'title', 'description', 'member')
+        fields = ('id', 'title', 'description', 'user')
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
