@@ -3,15 +3,15 @@ from .models import Circle, User
 
 
 class CircleSerializer(serializers.HyperlinkedModelSerializer):
-    user = serializers.HyperlinkedRelatedField(
-        view_name='user_detail',
+    member = serializers.HyperlinkedRelatedField(
+        view_name='member_detail',
         many=True,
         read_only=True
     )
 
     class Meta:
         model = Circle
-        fields = ('id', 'title', 'description', 'user')
+        fields = ('id', 'title', 'description', 'member')
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
