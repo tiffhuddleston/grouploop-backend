@@ -1,6 +1,6 @@
 from rest_framework import generics
-from .serializers import CircleSerializer, MemberSerializer
-from .models import Circle, Member
+from .serializers import CircleSerializer, UserSerializer
+from .models import Circle, User
 
 # Create your views here.
 
@@ -15,11 +15,11 @@ class CircleDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CircleSerializer
 
 
-class MemberList(generics.ListCreateAPIView):
-    queryset = Member.objects.all()
-    serializer_class = MemberSerializer
+class UserList(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
-class MemberDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Member.objects.all()
-    serializer_class = MemberSerializer
+class UserDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

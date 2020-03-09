@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Circle, Member
+from .models import Circle, User
 
 
 class CircleSerializer(serializers.HyperlinkedModelSerializer):
