@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Circle, User
+from .models import Circle, Member
 
 
 class CircleSerializer(serializers.HyperlinkedModelSerializer):
@@ -14,13 +14,13 @@ class CircleSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id', 'title', 'description', 'member')
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class MemberSerializer(serializers.HyperlinkedModelSerializer):
     circle = CircleSerializer(
         many=True,
         read_only=True
     )
 
     class Meta:
-        model = User
+        model = Member
         fields = ('id', 'name', 'github', 'linkedin',
                   'twitter', 'instagram', 'facebook', 'circle')

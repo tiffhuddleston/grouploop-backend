@@ -1,10 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractMember
 
 # Create your models here.
 
 
-class User(models.Model):
+class Member(models.Model):
     name = models.TextField()
     github = models.TextField()
     facebook = models.TextField()
@@ -22,7 +22,7 @@ class User(models.Model):
 class Circle(models.Model):
     title = models.TextField()
     description = models.TextField()
-    member = models.ManyToManyField(User)
+    member = models.ManyToManyField(Member)
 
     class Meta:
         ordering = ['title']
