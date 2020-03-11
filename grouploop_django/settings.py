@@ -29,7 +29,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.localhost', 'grouploop-be.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'grouploop-be.herokuapp.com']
 
 
 # Application definition
@@ -64,7 +64,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000/',
-
+    'https://grouploop-fe.herokuapp.com/',
 ]
 
 MIDDLEWARE = [
