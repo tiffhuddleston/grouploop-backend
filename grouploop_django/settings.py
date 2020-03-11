@@ -56,7 +56,6 @@ REST_FRAMEWORK = {
     ]
 }
 
-Access-Control-Allow-Origin: *
 
 CORS_ALLOW_HEADERS = 'True'
 CORS_ALLOW_CREDENTIALS = True
