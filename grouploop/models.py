@@ -6,11 +6,11 @@ from django.db import models
 
 class Member(models.Model):
     name = models.TextField()
-    github = models.TextField()
-    facebook = models.TextField()
-    instagram = models.TextField()
-    linkedin = models.TextField()
-    twitter = models.TextField()
+    github = models.TextField(blank=True)
+    facebook = models.TextField(blank=True)
+    instagram = models.TextField(blank=True)
+    linkedin = models.TextField(blank=True)
+    twitter = models.TextField(blank=True)
 
     class Meta:
         ordering = ['name']
