@@ -56,12 +56,14 @@ REST_FRAMEWORK = {
     ]
 }
 
+Access-Control-Allow-Origin: *
 
 CORS_ALLOW_HEADERS = 'True'
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000/',
     'http://localhost:3001/',
+    'https://grouploop-be.herokuapp.com/',
 ]
 
 MIDDLEWARE = [
