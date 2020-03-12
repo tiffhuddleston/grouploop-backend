@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Circle, Member
 
 
-class CircleSerializer(serializers.HyperlinkedModelSerializer):
+class CircleSerializer(serializers.ModelSerializer):
     member = serializers.HyperlinkedRelatedField(
         view_name='member_detail',
         many=True,

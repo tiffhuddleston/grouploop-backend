@@ -22,7 +22,7 @@ class Member(models.Model):
 class Circle(models.Model):
     title = models.TextField()
     description = models.TextField()
-    member = models.ManyToManyField(Member)
+    member = models.ManyToManyField(Member, blank=True)
 
     class Meta:
         ordering = ['title']
