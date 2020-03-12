@@ -63,8 +63,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000/',
-    'https://grouploop-fe.herokuapp.com/',
+    'http://localhost:3000',
+    'https://grouploop-fe.herokuapp.com',
 ]
 
 MIDDLEWARE = [
